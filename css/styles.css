@@ -29,6 +29,28 @@
 .link {
     text-decoration: none;
 }
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+}
+button {
+    cursor: pointer;
+}
+
 .titel {
     color: var(--second-text-color);
     letter-spacing: 0.02em;
@@ -39,9 +61,32 @@
     font-size: 16px;
     line-height: 1.5;
 }
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+/*----------HEADER----------*/
 
+.main-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+.header-conteiner {
+    display: flex;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    gap: 40px;
+}
 /* Logo*/
-
+.logo-nav {
+    margin-right: 76px;
+}
 .logo-nav,
 .below-link {
     font-family: 'Raleway', sans-serif;
@@ -63,6 +108,7 @@
 /* MENU */
 
 .menu-list {
+    padding: 24px 0;
     font-family: 'Roboto', sans-serif;
     Font-style: Medium;
     Font-size: 16px;
@@ -77,6 +123,10 @@
 }
 
 /* CONTACT*/
+.menu-contact {
+    display: flex;
+    gap: 40px;
+}
 .contact {
     font-style: normal;
 }
@@ -96,10 +146,12 @@
 
 /*  First Section  */
 .first-section {
+    padding: 188px 0;
     background-color: #2E2F42;
 }
 
 .main-name {
+    max-width: 496px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     Font-style: Bold;
@@ -111,6 +163,11 @@
 
 
 .modal-open-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     Font-style: Medium;
@@ -129,7 +186,19 @@
 
 /*  Second Section  */
 
+.second-section {
+    padding: 120px 0;
+}
+
+.menu-second-section {
+    display: flex;
+    gap: 24px;
+}
+.second-section-item {
+    width: calc((100% - 72px) / 4);
+}
 .second-section-name {
+    margin-bottom: 8px;
     font-family: 'Roboto', sans-serif;
     Font-style: Medium;
     Font-size: 20px;
@@ -151,7 +220,11 @@
 
 /*  Third Section  */
 
+.third-section {
+    padding-bottom: 120px;
+}
 .third-section-name {
+    margin-bottom: 72px;
     font-family: 'Roboto', sans-serif;
     Font-style: Bold;
     Font-size: 36px;
@@ -161,15 +234,23 @@
     text-transform: capitalize;
     color: #2E2F42;
 }
-
+.menu-third-section {
+    display: flex;
+    gap: 24px;
+}
+.third-section-item {
+    width: calc((100% - 48px) / 3);
+}
 
 
 /*  Fourth Section  */
 .fourth-section {
+    padding: 120px 0;
     background-color:  #F4F4FD;
 }
 
 .team-main {
+    margin-bottom: 72px;
     font-family: 'Roboto', sans-serif;
     Font-style: Bold;
     Font-size: 36px;
@@ -179,11 +260,23 @@
     text-transform: capitalize;
     color: #2E2F42;
 }
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
 .team-list-link {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
 }
 
+.conteinet-name {
+    padding: 32px 16px;
+}
 .team-name {
+    text-align: center;
+    margin-bottom: 8px;
     font-family: 'Roboto', sans-serif;
     Font-style: Medium;
     Font-size: 20px;
@@ -195,6 +288,7 @@
 }
 
 .position {
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     Font-style: Regular;
     Font-size: 16px;
@@ -217,11 +311,13 @@
     color: #4D5AE5;
 }
 .below {
+    padding: 100px 0;
     background-color: #2e2f42;
 }
 
 
 .below-txt {
+    max-width: 264px;
     font-family: 'Roboto', sans-serif;
     Font-style: Regular;
     Font-size: 16px;
@@ -230,11 +326,26 @@
     Letter-spacing: 2%;
     color: #F4F4FD; 
 }
-
+.logo-nav {
+    display: inline-block;
+    margin-bottom: 16px;
+}
 
 /*  PORTFOLIO  */
 
+.general-info {
+    padding: 96px 0 120px;
+}
+.menu-button {
+    display: flex;
+    justify-content: center;
+    gap: 24px; 
+    margin-bottom: 72px;
+}
 .button-link {
+    padding: 12px 24px;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     Font-style: Medium;
@@ -248,11 +359,27 @@
 }
 .button-link:hover,
 .button-link:focus {
+    border: 1px solid transparent;
     color: #FFFFFF ;
     background-color: #404BBF;
 }
+.info-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.info-link {
+    width: calc((100% - 48px) / 3);
+}
 
+.info-conteiner {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 .name-link {
+    margin-bottom: 8px;
     font-family: "Roboto", sans-serif;
     Font-style: Medium;
     Font-size: 20px;
